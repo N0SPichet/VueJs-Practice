@@ -1,0 +1,21 @@
+p {
+	color: #000;
+	font-size: 18px;
+}
+
+.available {
+	background: #ff00ff;
+}
+
+.available p {
+	background: #a7e4a6;
+}
+
+.nearby p:after {
+	content: "nearby";
+	margin-left: 10px;
+}
+
+ul li {
+	list-style: none;
+}

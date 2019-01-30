@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VueJs</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<greeting></greeting>
+		<!-- <h1>Binding</h1>
+		<h1>Hello {{ firstName }}</h1>
+		<h1>Job {{ job }}</h1>
+		<a v-bind:href="facebook">facebook</a> -->
+
+		<!-- <h1>Event</h1>
+		<button v-on:click="addAge(1)">Add year</button>
+		<p>My age is {{ age }}</p>
+		<a v-on:click.prevent="linkClicked" v-bind:href="facebook">facebook</a> -->
+
+		<!-- <h1>Keyboard Event</h1>
+		<label>Name:</label>
+		<input type="text" v-on:keyup.enter="logName">
+		<input type="text" v-model="name">
+		<span>{{ name }}</span> -->
+
+		<!-- <h1>Compute</h1>
+		<button v-on:click="a++">Add to A</button>
+		<button v-on:click="b++">Add to B</button>
+		{{ a }}
+		{{ addToA }}
+		{{ b }}
+		{{ addToB }} -->
+
+		<!-- <h1 >Dynamic CSS</h1>
+		<button v-on:click="nearby = !nearby">Toggle nearby</button>
+		<button v-on:click="available = !available">Toggle available</button>
+		<div v-bind:class="{available:available}">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+		</div>
+		<div v-bind:class="compClasses">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+		</div> -->
+
+		<h1>Conditionals</h1>
+		<button v-on:click="error = !error">Toggle Error</button>
+		<button v-on:click="success = !success">Toggle Success</button>
+		<!-- <p v-if="success">Success</p>
+		<p v-if="error">Error</p> -->
+		<p v-show="success">Success</p>
+		<p v-show="error">Error</p>
+
+		<h1>Loop</h1>
+		<ul>
+			<li v-for="list in lists">{{ list }}</li>
+		</ul>
+		<ul>
+			<li v-for="book, index in books">{{ index+1 }} : {{ book.author }} - {{ book.name }}</li>
+		</ul>
+
+		<h1>Refs</h1>
+		<input type="text" ref="input">
+		<button v-on:click="readRefs">ReadRefs</button>
+		<p>Your fav food: {{ output }}</p>
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
